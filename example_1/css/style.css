@@ -1,0 +1,61 @@
+.title{
+    color:red;
+}
+
+.grid-container{
+display: grid;
+grid-template-columns: auto auto auto;
+}
+.grid-item{
+    padding: 20px;
+
+}
+
+.grid-container-2{
+    display: grid;
+    grid-template-areas:
+     "header header header header header header"
+     "menus main main main  sidebar sidebar"
+     "menus footer footer  footer footer footer"
+     ;
+     gap: 10px;
+     background-color: #2196F3;
+     padding: 10px;
+}
+.grid-item2{
+padding: 20px;
+align-items: center;
+
+justify-content: center;
+border: 5px;
+background-color: blanchedalmond;
+}
+.item1{grid-area: header;}
+.item2{grid-area: main;}
+.item3{grid-area: sidebar;}
+.item4{grid-area: menus;}
+.item5{grid-area: footer;}
+
+.flex-container{
+    display: flex;
+    background-color: DodgerBlue;
+    flex-direction: row;
+    flex-flow:row wrap;
+  justify-content: center;
+}
+.flex-item{
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+     width: 150px;
+    font-size: 30px;
+}
+a[href*="test"]{
+    color:green;
+}
+a[href$=".ir"]{
+    color:red;
+}
+a[href~="exm"]{
+    color:yellow;
+}
